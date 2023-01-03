@@ -15,7 +15,7 @@ class FooterButton extends StatelessWidget {
       child: Text(
         label,
         textAlign: align,
-        style: TextStyle(color: Color(0xFFAAAAAA)),
+        style: const TextStyle(color: Color(0xFFAAAAAA)),
       ),
     ));
   }

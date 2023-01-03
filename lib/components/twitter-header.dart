@@ -15,7 +15,7 @@ class HeaderButton extends StatelessWidget {
       child: Text(
         label,
         textAlign: align,
-        style: TextStyle(color: Color(0xFFFFFFFF)),
+        style: const TextStyle(color: Color(0xFFFFFFFF)),
       ),
     ));
   }
