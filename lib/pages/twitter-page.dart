@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tp_twitter_correction/components/login-form.dart';
 import 'package:tp_twitter_correction/components/twitter-footer.dart';
 import 'package:tp_twitter_correction/components/twitter-header.dart';
 import 'package:tp_twitter_correction/components/twitter-item.dart';
@@ -19,6 +20,8 @@ class TwitterPage extends StatelessWidget {
           // Content
           Expanded(
             child: Flex(direction: Axis.vertical, children: [
+              // Formulaire de connexion
+              LoginForm(),
               // Carte Twitter
               IntrinsicHeight(
                   // Deux elements verticals

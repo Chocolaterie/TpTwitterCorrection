@@ -1,17 +1,18 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:tp_twitter_correction/utils/constantes.dart';
 
 class TwitterButton extends StatelessWidget {
-  String label;
+  String iconPath;
 
-  TwitterButton({required this.label});
+  TwitterButton({required this.iconPath});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: Text(
-      label,
-      textAlign: TextAlign.center,
+        child: IconButton(
+      icon: Image.asset(iconPath),
+      onPressed: () {},
     ));
   }
 }
@@ -22,9 +23,9 @@ class TwitterItemFooter extends StatelessWidget {
     return Flex(
       direction: Axis.horizontal,
       children: [
-        TwitterButton(label: "Répondre"),
-        TwitterButton(label: "Retweet"),
-        TwitterButton(label: "Favoris"),
+        TwitterButton(iconPath: "images/reply.png"),
+        TwitterButton(iconPath: "images/retweet.png"),
+        TwitterButton(iconPath: "images/favorite.png"),
       ],
     );
   }
