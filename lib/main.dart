@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tp_twitter_correction/pages/login-page.dart';
-import 'package:tp_twitter_correction/pages/twitter-page.dart';
+import 'package:tp_twitter_correction/pages/login_page.dart';
+import 'package:tp_twitter_correction/pages/twitter_page.dart';
 
 void main() {
   runApp(const MyApp());
