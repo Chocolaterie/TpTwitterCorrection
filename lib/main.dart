@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tp_twitter_correction/pages/login-page.dart';
 import 'package:tp_twitter_correction/pages/twitter-page.dart';
 
 void main() {
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TwitterPage(),
+      home: LoginPage(),
+      routes: {
+        "/tweet-list-page": (context) => TwitterPage(),
+      },
     );
   }
 }
